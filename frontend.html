@@ -16,6 +16,8 @@
     <select id="fromStation"></select>
     <label for="toStation">迄站：</label>
     <select id="toStation"></select>
+    <label for="trainDate">日期：</label>
+    <input type="date" id="trainDate">
     <button onclick="queryTrains()">查詢</button>
     <div id="result"></div>
     <script>
@@ -45,11 +47,17 @@
         async function queryTrains() {
             const from = document.getElementById('fromStation').value;
             const to = document.getElementById('toStation').value;
+            const date = document.getElementById('trainDate').value; // 獲取日期值
+
+            if (!from || !to || !date) {
+                alert("請選擇完整資訊");
+                return;
+            }
             if (from === to) {
                 document.getElementById('result').innerHTML = '<p>請選擇不同的起訖站。</p>';
                 return;
             }
-            const res = await fetch(`http://localhost:8000/trains?from=${from}&to=${to}`);
+            const res = await fetch(`http://localhost:8000/trains?from=${from}&to=${to}&date=${date}`);
             const data = await res.json();
             if (data.length === 0) {
                 document.getElementById('result').innerHTML = '<p>查無資料</p>';

@@ -24,21 +24,6 @@ def serialize_time(obj):
         return f"{hours:02d}:{minutes:02d}"
     return str(obj)
 
-# def get_stations():
-#     """取得所有站點名稱"""
-#     conn = get_db_conn()
-#     try:
-#         with conn.cursor(dictionary=True) as cursor:
-#             cursor.execute('''
-#                            SELECT DISTINCT s.station_id, st.name_zh 
-#                             FROM stop_times s
-#                             JOIN stations st ON s.station_id = st.station_id
-#                             ORDER BY s.station_id
-#                         ''')
-#             stations = [row['name_zh'] for row in cursor.fetchall()]
-#         return stations
-#     finally:
-#         conn.close()
 def get_stations():
     """取得所有站點名稱與 ID"""
     conn = get_db_conn()
@@ -51,25 +36,30 @@ def get_stations():
     finally:
         conn.close()
 
-def get_trains_between(from_station, to_station):
+def get_trains_between(from_station, to_station, train_date):
     """查詢經過兩站的所有車次與時間"""
     conn = get_db_conn()
     try:
         with conn.cursor(dictionary=True) as cursor:
             sql = '''
                 SELECT 
-                    s1.train_date, s1.train_no, st1.name_zh AS from_station_name, 
-                    s1.departure_time AS from_departure, st2.name_zh AS to_station_name, 
+                    s1.train_date, 
+                    s1.train_no, 
+                    st1.name_zh AS from_station_name, 
+                    s1.departure_time AS from_departure, 
+                    st2.name_zh AS to_station_name, 
                     s2.arrival_time AS to_arrival
                 FROM stop_times s1
                 JOIN stop_times s2 ON s1.train_date = s2.train_date AND s1.train_no = s2.train_no
                 JOIN stations st1 ON s1.station_id = st1.station_id
                 JOIN stations st2 ON s2.station_id = st2.station_id
-                WHERE s1.station_id = %s AND s2.station_id = %s 
+                WHERE s1.station_id = %s 
+                AND s2.station_id = %s 
                 AND s1.stop_sequence < s2.stop_sequence
-                ORDER BY s1.departure_time;
+                AND s1.train_date = %s
+                ORDER BY s1.departure_time
             '''
-            cursor.execute(sql, (from_station, to_station))
+            cursor.execute(sql, (from_station, to_station, train_date))
             results = cursor.fetchall()
             # 序列化 TIME 物件為字串
             for row in results:
