@@ -19,5 +19,9 @@ def get_stations():
     return query.get_stations()
 
 @app.get("/trains")
-def get_trains(from_station: str = Query(..., alias="from"), to_station: str = Query(..., alias="to")):
-    return query.get_trains_between(from_station, to_station)
+def get_trains(
+    from_station: str = Query(..., alias="from"), 
+    to_station: str = Query(..., alias="to"),
+    date: str = Query(...)
+    ):
+    return query.get_trains_between(from_station, to_station, date)
