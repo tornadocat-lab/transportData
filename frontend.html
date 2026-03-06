@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>車次查詢系統</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; }
+        label, select, button { margin: 0.5em; }
+        table { border-collapse: collapse; margin-top: 1em; }
+        th, td { border: 1px solid #ccc; padding: 0.5em 1em; }
+    </style>
+</head>
+<body>
+    <h1>車次查詢系統</h1>
+    <label for="fromStation">起站：</label>
+    <select id="fromStation"></select>
+    <label for="toStation">迄站：</label>
+    <select id="toStation"></select>
+    <button onclick="queryTrains()">查詢</button>
+    <div id="result"></div>
+    <script>
+        async function loadStations() {
+            const res = await fetch('http://localhost:8000/stations');
+            const stations = await res.json();
+            const fromSel = document.getElementById('fromStation');
+            const toSel = document.getElementById('toStation');
+            
+            let optionsHtml = '<option value="">請選擇車站</option>';
+
+            // 迭代每個車站物件，取出 id 和名稱
+            stations.forEach(st => {
+                optionsHtml += `<option value="${st.station_id}">${st.name_zh}</option>`;
+            });
+
+            // 一次性更新 DOM
+            fromSel.innerHTML = optionsHtml;
+            toSel.innerHTML = optionsHtml;
+
+            // stations.forEach(st => {
+            //     fromSel.innerHTML += `<option value="${st}">${st}</option>`;
+            //     toSel.innerHTML += `<option value="${st}">${st}</option>`;
+            // });
+        }
+
+        async function queryTrains() {
+            const from = document.getElementById('fromStation').value;
+            const to = document.getElementById('toStation').value;
+            if (from === to) {
+                document.getElementById('result').innerHTML = '<p>請選擇不同的起訖站。</p>';
+                return;
+            }
+            const res = await fetch(`http://localhost:8000/trains?from=${from}&to=${to}`);
+            const data = await res.json();
+            if (data.length === 0) {
+                document.getElementById('result').innerHTML = '<p>查無資料</p>';
+                return;
+            }
+            let html = '<table><tr><th>日期</th><th>車次</th><th>起站</th><th>起站發車</th><th>迄站</th><th>迄站到達</th></tr>';
+            data.forEach(row => {
+                html += `<tr><td>${row.train_date}</td><td>${row.train_no}</td><td>${row.from_station_name}</td><td>${row.from_departure}</td><td>${row.to_station_name}</td><td>${row.to_arrival}</td></tr>`;
+            });
+            html += '</table>';
+            document.getElementById('result').innerHTML = html;
+        }
+        loadStations();
+    </script>
+</body>
+</html>
+
+
