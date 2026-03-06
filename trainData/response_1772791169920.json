@@ -1,0 +1,2182 @@
+[
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0108",
+      "Direction": 1,
+      "StartingStationID": "1070",
+      "StartingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "EndingStationID": "0990",
+      "EndingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "07:55",
+        "DepartureTime": "07:55"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "08:37",
+        "DepartureTime": "08:39"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "09:20",
+        "DepartureTime": "09:21"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "09:29",
+        "DepartureTime": "09:32"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "09:40",
+        "DepartureTime": "09:40"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0109",
+      "Direction": 0,
+      "StartingStationID": "0990",
+      "StartingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "EndingStationID": "1070",
+      "EndingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "07:20",
+        "DepartureTime": "07:20"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "07:28",
+        "DepartureTime": "07:31"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "07:38",
+        "DepartureTime": "07:39"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "08:18",
+        "DepartureTime": "08:20"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "09:05",
+        "DepartureTime": "09:05"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0112",
+      "Direction": 1,
+      "StartingStationID": "1070",
+      "StartingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "EndingStationID": "0990",
+      "EndingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "08:55",
+        "DepartureTime": "08:55"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "09:37",
+        "DepartureTime": "09:39"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "10:20",
+        "DepartureTime": "10:21"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "10:29",
+        "DepartureTime": "10:32"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "10:40",
+        "DepartureTime": "10:40"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0116",
+      "Direction": 1,
+      "StartingStationID": "1070",
+      "StartingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "EndingStationID": "0990",
+      "EndingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "09:55",
+        "DepartureTime": "09:55"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "10:37",
+        "DepartureTime": "10:39"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "11:20",
+        "DepartureTime": "11:21"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "11:29",
+        "DepartureTime": "11:32"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "11:40",
+        "DepartureTime": "11:40"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0117",
+      "Direction": 0,
+      "StartingStationID": "0990",
+      "StartingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "EndingStationID": "1070",
+      "EndingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "09:20",
+        "DepartureTime": "09:20"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "09:28",
+        "DepartureTime": "09:31"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "09:38",
+        "DepartureTime": "09:39"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "10:18",
+        "DepartureTime": "10:20"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "11:05",
+        "DepartureTime": "11:05"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0120",
+      "Direction": 1,
+      "StartingStationID": "1070",
+      "StartingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "EndingStationID": "0990",
+      "EndingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "10:55",
+        "DepartureTime": "10:55"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "11:37",
+        "DepartureTime": "11:39"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "12:20",
+        "DepartureTime": "12:21"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "12:29",
+        "DepartureTime": "12:32"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "12:40",
+        "DepartureTime": "12:40"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0121",
+      "Direction": 0,
+      "StartingStationID": "0990",
+      "StartingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "EndingStationID": "1070",
+      "EndingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "10:20",
+        "DepartureTime": "10:20"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "10:28",
+        "DepartureTime": "10:31"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "10:38",
+        "DepartureTime": "10:39"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "11:18",
+        "DepartureTime": "11:20"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "12:05",
+        "DepartureTime": "12:05"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0124",
+      "Direction": 1,
+      "StartingStationID": "1070",
+      "StartingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "EndingStationID": "0990",
+      "EndingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "11:55",
+        "DepartureTime": "11:55"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "12:37",
+        "DepartureTime": "12:39"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "13:20",
+        "DepartureTime": "13:21"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "13:29",
+        "DepartureTime": "13:32"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "13:40",
+        "DepartureTime": "13:40"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0125",
+      "Direction": 0,
+      "StartingStationID": "0990",
+      "StartingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "EndingStationID": "1070",
+      "EndingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "11:20",
+        "DepartureTime": "11:20"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "11:28",
+        "DepartureTime": "11:31"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "11:38",
+        "DepartureTime": "11:39"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "12:18",
+        "DepartureTime": "12:20"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "13:05",
+        "DepartureTime": "13:05"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0128",
+      "Direction": 1,
+      "StartingStationID": "1070",
+      "StartingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "EndingStationID": "0990",
+      "EndingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "12:55",
+        "DepartureTime": "12:55"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "13:37",
+        "DepartureTime": "13:39"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "14:20",
+        "DepartureTime": "14:21"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "14:29",
+        "DepartureTime": "14:32"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "14:40",
+        "DepartureTime": "14:40"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0129",
+      "Direction": 0,
+      "StartingStationID": "0990",
+      "StartingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "EndingStationID": "1070",
+      "EndingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "12:20",
+        "DepartureTime": "12:20"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "12:28",
+        "DepartureTime": "12:31"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "12:38",
+        "DepartureTime": "12:39"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "13:18",
+        "DepartureTime": "13:20"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "14:05",
+        "DepartureTime": "14:05"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0132",
+      "Direction": 1,
+      "StartingStationID": "1070",
+      "StartingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "EndingStationID": "0990",
+      "EndingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "13:55",
+        "DepartureTime": "13:55"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "14:37",
+        "DepartureTime": "14:39"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "15:20",
+        "DepartureTime": "15:21"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "15:29",
+        "DepartureTime": "15:32"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "15:40",
+        "DepartureTime": "15:40"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0133",
+      "Direction": 0,
+      "StartingStationID": "0990",
+      "StartingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "EndingStationID": "1070",
+      "EndingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "13:20",
+        "DepartureTime": "13:20"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "13:28",
+        "DepartureTime": "13:31"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "13:38",
+        "DepartureTime": "13:39"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "14:18",
+        "DepartureTime": "14:20"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "15:05",
+        "DepartureTime": "15:05"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0136",
+      "Direction": 1,
+      "StartingStationID": "1070",
+      "StartingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "EndingStationID": "0990",
+      "EndingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "14:55",
+        "DepartureTime": "14:55"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "15:37",
+        "DepartureTime": "15:39"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "16:20",
+        "DepartureTime": "16:21"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "16:29",
+        "DepartureTime": "16:32"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "16:40",
+        "DepartureTime": "16:40"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0137",
+      "Direction": 0,
+      "StartingStationID": "0990",
+      "StartingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "EndingStationID": "1070",
+      "EndingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "14:20",
+        "DepartureTime": "14:20"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "14:28",
+        "DepartureTime": "14:31"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "14:38",
+        "DepartureTime": "14:39"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "15:18",
+        "DepartureTime": "15:20"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "16:05",
+        "DepartureTime": "16:05"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0140",
+      "Direction": 1,
+      "StartingStationID": "1070",
+      "StartingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "EndingStationID": "0990",
+      "EndingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "15:55",
+        "DepartureTime": "15:55"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "16:37",
+        "DepartureTime": "16:39"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "17:20",
+        "DepartureTime": "17:21"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "17:29",
+        "DepartureTime": "17:32"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "17:40",
+        "DepartureTime": "17:40"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0141",
+      "Direction": 0,
+      "StartingStationID": "0990",
+      "StartingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "EndingStationID": "1070",
+      "EndingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "15:20",
+        "DepartureTime": "15:20"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "15:28",
+        "DepartureTime": "15:31"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "15:38",
+        "DepartureTime": "15:39"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "16:18",
+        "DepartureTime": "16:20"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "17:05",
+        "DepartureTime": "17:05"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0144",
+      "Direction": 1,
+      "StartingStationID": "1070",
+      "StartingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "EndingStationID": "0990",
+      "EndingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "16:55",
+        "DepartureTime": "16:55"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "17:37",
+        "DepartureTime": "17:39"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "18:20",
+        "DepartureTime": "18:21"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "18:29",
+        "DepartureTime": "18:32"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "18:40",
+        "DepartureTime": "18:40"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0145",
+      "Direction": 0,
+      "StartingStationID": "0990",
+      "StartingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "EndingStationID": "1070",
+      "EndingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "16:20",
+        "DepartureTime": "16:20"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "16:28",
+        "DepartureTime": "16:31"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "16:38",
+        "DepartureTime": "16:39"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "17:18",
+        "DepartureTime": "17:20"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "18:05",
+        "DepartureTime": "18:05"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0148",
+      "Direction": 1,
+      "StartingStationID": "1070",
+      "StartingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "EndingStationID": "0990",
+      "EndingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "17:55",
+        "DepartureTime": "17:55"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "18:37",
+        "DepartureTime": "18:39"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "19:20",
+        "DepartureTime": "19:21"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "19:29",
+        "DepartureTime": "19:32"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "19:40",
+        "DepartureTime": "19:40"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0149",
+      "Direction": 0,
+      "StartingStationID": "0990",
+      "StartingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "EndingStationID": "1070",
+      "EndingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "17:20",
+        "DepartureTime": "17:20"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "17:28",
+        "DepartureTime": "17:31"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "17:38",
+        "DepartureTime": "17:39"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "18:18",
+        "DepartureTime": "18:20"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "19:05",
+        "DepartureTime": "19:05"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0152",
+      "Direction": 1,
+      "StartingStationID": "1070",
+      "StartingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "EndingStationID": "0990",
+      "EndingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "18:55",
+        "DepartureTime": "18:55"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "19:37",
+        "DepartureTime": "19:39"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "20:20",
+        "DepartureTime": "20:21"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "20:29",
+        "DepartureTime": "20:32"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "20:40",
+        "DepartureTime": "20:40"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0153",
+      "Direction": 0,
+      "StartingStationID": "0990",
+      "StartingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "EndingStationID": "1070",
+      "EndingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "18:20",
+        "DepartureTime": "18:20"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "18:28",
+        "DepartureTime": "18:31"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "18:38",
+        "DepartureTime": "18:39"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "19:18",
+        "DepartureTime": "19:20"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "20:05",
+        "DepartureTime": "20:05"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0156",
+      "Direction": 1,
+      "StartingStationID": "1070",
+      "StartingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "EndingStationID": "0990",
+      "EndingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "19:55",
+        "DepartureTime": "19:55"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "20:37",
+        "DepartureTime": "20:39"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "21:20",
+        "DepartureTime": "21:21"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "21:29",
+        "DepartureTime": "21:32"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "21:40",
+        "DepartureTime": "21:40"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0157",
+      "Direction": 0,
+      "StartingStationID": "0990",
+      "StartingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "EndingStationID": "1070",
+      "EndingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "19:20",
+        "DepartureTime": "19:20"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "19:28",
+        "DepartureTime": "19:31"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "19:38",
+        "DepartureTime": "19:39"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "20:18",
+        "DepartureTime": "20:20"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "21:05",
+        "DepartureTime": "21:05"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0160",
+      "Direction": 1,
+      "StartingStationID": "1070",
+      "StartingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "EndingStationID": "0990",
+      "EndingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "20:55",
+        "DepartureTime": "20:55"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "21:37",
+        "DepartureTime": "21:39"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "22:20",
+        "DepartureTime": "22:21"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "22:29",
+        "DepartureTime": "22:32"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "22:40",
+        "DepartureTime": "22:40"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0161",
+      "Direction": 0,
+      "StartingStationID": "0990",
+      "StartingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "EndingStationID": "1070",
+      "EndingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "20:20",
+        "DepartureTime": "20:20"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "20:28",
+        "DepartureTime": "20:31"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "20:38",
+        "DepartureTime": "20:39"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "21:18",
+        "DepartureTime": "21:20"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "22:05",
+        "DepartureTime": "22:05"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0165",
+      "Direction": 0,
+      "StartingStationID": "0990",
+      "StartingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "EndingStationID": "1070",
+      "EndingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "21:20",
+        "DepartureTime": "21:20"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "21:28",
+        "DepartureTime": "21:31"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "21:38",
+        "DepartureTime": "21:39"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "22:18",
+        "DepartureTime": "22:20"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "23:05",
+        "DepartureTime": "23:05"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0203",
+      "Direction": 0,
+      "StartingStationID": "1000",
+      "StartingStationName": {
+        "Zh_tw": "台北",
+        "En": "Taipei"
+      },
+      "EndingStationID": "1070",
+      "EndingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "06:30",
+        "DepartureTime": "06:30"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "06:37",
+        "DepartureTime": "06:38"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "07:18",
+        "DepartureTime": "07:20"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1050",
+        "StationName": {
+          "Zh_tw": "嘉義",
+          "En": "Chiayi"
+        },
+        "ArrivalTime": "07:43",
+        "DepartureTime": "07:45"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "1060",
+        "StationName": {
+          "Zh_tw": "台南",
+          "En": "Tainan"
+        },
+        "ArrivalTime": "08:01",
+        "DepartureTime": "08:03"
+      },
+      {
+        "StopSequence": 6,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "08:15",
+        "DepartureTime": "08:15"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  },
+  {
+    "TrainDate": "2026-03-06",
+    "DailyTrainInfo": {
+      "TrainNo": "0204",
+      "Direction": 1,
+      "StartingStationID": "1070",
+      "StartingStationName": {
+        "Zh_tw": "左營",
+        "En": "Zuoying"
+      },
+      "EndingStationID": "0990",
+      "EndingStationName": {
+        "Zh_tw": "南港",
+        "En": "Nangang"
+      },
+      "Note": {}
+    },
+    "StopTimes": [
+      {
+        "StopSequence": 1,
+        "StationID": "1070",
+        "StationName": {
+          "Zh_tw": "左營",
+          "En": "Zuoying"
+        },
+        "ArrivalTime": "06:55",
+        "DepartureTime": "06:55"
+      },
+      {
+        "StopSequence": 2,
+        "StationID": "1060",
+        "StationName": {
+          "Zh_tw": "台南",
+          "En": "Tainan"
+        },
+        "ArrivalTime": "07:06",
+        "DepartureTime": "07:07"
+      },
+      {
+        "StopSequence": 3,
+        "StationID": "1040",
+        "StationName": {
+          "Zh_tw": "台中",
+          "En": "Taichung"
+        },
+        "ArrivalTime": "07:46",
+        "DepartureTime": "07:48"
+      },
+      {
+        "StopSequence": 4,
+        "StationID": "1010",
+        "StationName": {
+          "Zh_tw": "板橋",
+          "En": "Banqiao"
+        },
+        "ArrivalTime": "08:26",
+        "DepartureTime": "08:27"
+      },
+      {
+        "StopSequence": 5,
+        "StationID": "1000",
+        "StationName": {
+          "Zh_tw": "台北",
+          "En": "Taipei"
+        },
+        "ArrivalTime": "08:34",
+        "DepartureTime": "08:37"
+      },
+      {
+        "StopSequence": 6,
+        "StationID": "0990",
+        "StationName": {
+          "Zh_tw": "南港",
+          "En": "Nangang"
+        },
+        "ArrivalTime": "08:45",
+        "DepartureTime": "08:45"
+      }
+    ],
+    "UpdateTime": "2026-02-26T23:59:58+08:00",
+    "VersionID": 3
+  }
+]
