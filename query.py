@@ -1,5 +1,5 @@
 import mysql.connector
-from datetime import time
+from datetime import time, datetime, timedelta
 import os
 
 DB_CONFIG = {
@@ -68,3 +68,44 @@ def get_trains_between(from_station, to_station, train_date):
         return results
     finally:
         conn.close()
+
+def get_transfer_plans(from_id, to_id, date, buffer_minutes=20):
+    # 定義核心轉乘樞紐 (Taichung, Hsinchu)
+    hubs = [
+        {"id": "1040", "name": "台中"},
+        {"id": "1030", "name": "新竹"}
+    ]
+    
+    plans = []
+    
+    for hub in hubs:
+        # 避開起點或終點就是轉乘站的情況
+        if hub['id'] == from_id or hub['id'] == to_id:
+            continue
+            
+        # 第一程：Start -> Hub
+        leg1 = get_trains_between(from_id, hub['id'], date)
+        # 第二程：Hub -> Destination
+        leg2 = get_trains_between(hub['id'], to_id, date)
+        
+        for t1 in leg1:
+            for t2 in leg2:
+                # 解析時間進行比對 (格式 HH:mm)
+                t1_arr = datetime.strptime(t1['to_arrival'], "%H:%M")
+                t2_dep = datetime.strptime(t2['from_departure'], "%H:%M")
+                
+                # 計算轉乘等待時間 (單位：分鐘)
+                wait_time = (t2_dep - t1_arr).total_seconds() / 60
+                
+                # 過濾條件：等待時間需在 buffer 與 90 分鐘之間
+                if buffer_minutes <= wait_time <= 200:
+                    plans.append({
+                        "transfer_station": hub['name'],
+                        "wait_time_mins": int(wait_time),
+                        "first_leg": t1,
+                        "second_leg": t2
+                    })
+                    
+    # 按總到達時間排序，這對使用者最實用
+    plans.sort(key=lambda x: x['second_leg']['to_arrival'])
+    return plans
