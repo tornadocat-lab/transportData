@@ -5,8 +5,17 @@
 ### 解決痛點：
 
 1. 常用清單 (Favorites)(三個）：快速查詢固定通勤路線，減少重複輸入。
-2. 轉車邏輯 (Transfer Optimization)：這是我開發的核心目標，解決現行 App 在長途跨線查詢時的流程冗餘（待開發）。
+2. 轉車邏輯 (Transfer Optimization)：這是我開發的核心目標，解決現行 App 只能查詢單一車次的問題。（查詢近一個月的資料）
 
+
+
+
+
+--------------------------------------------------
+start server:
+uvicorn main:app --reload
+
+python -m http.server 8001
 
 
 
