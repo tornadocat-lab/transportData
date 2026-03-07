@@ -13,6 +13,7 @@ completed:
 1. 簡易的前端，支援基本查詢
 2. 新增表格stations，存放station_id, station_name
 3. query 
+4. 新增日期選擇
 
 遇到過的問題：
 1. ResponseValidationError：在main.py裡限制了, response_model的類型，導致obj無法傳遞
