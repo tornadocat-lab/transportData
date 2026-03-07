@@ -25,3 +25,24 @@ def get_trains(
     date: str = Query(...)
     ):
     return query.get_trains_between(from_station, to_station, date)
+
+@app.get("/transfers")
+def get_transfers(
+    from_station: str = Query(..., alias="from"), 
+    to_station: str = Query(..., alias="to"),
+    date: str = Query(...),
+    buffer: int = Query(20, description="Transfer wait time buffer in minutes")
+    ):
+    return query.get_transfer_plans(from_station, to_station, date, buffer_minutes=buffer)
+
+# @app.get("/trains/transfer")
+# def get_transfer_trains(
+#     from_station: str = Query(..., alias="from"),
+#     to_station: str = Query(..., alias="to"),
+#     date: str = Query(...),
+#     buffer: int = 20 
+# ):
+#     if from_station == to_station:
+#         return {"error": "Origin and destination must be different."}
+        
+#     return query.get_transfer_plans(from_station, to_station, date, buffer)

@@ -3,24 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>車次查詢系統</title>
-    <style>
-        body { font-family: sans-serif; margin: 2em; }
-        label, select, button { margin: 0.5em; }
-        table { border-collapse: collapse; margin-top: 1em; }
-        th, td { border: 1px solid #ccc; padding: 0.5em 1em; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>車次查詢系統</h1>
-    <label for="fromStation">起站：</label>
-    <select id="fromStation"></select>
-    <label for="toStation">迄站：</label>
-    <select id="toStation"></select>
-    <label for="trainDate">日期：</label>
-    <input type="date" id="trainDate">
-    <button onclick="queryTrains()">查詢</button>
-    <div id="result"></div>
+    <div class="container">
+        <div class="left">
+            <h1>車次查詢系統</h1>
+            <div>
+                <label for="fromStation">起站：</label>
+                <select id="fromStation"></select>
+            </div>
+            <div>
+                <label for="toStation">迄站：</label>
+                <select id="toStation"></select>
+            </div>
+            <div>
+                <label for="trainDate">日期：</label>
+                <input type="date" id="trainDate">
+            </div>
+            <div>
+                <label for="bufferTime">轉車等待時間(分鐘)：</label>
+                <input type="number" id="bufferTime" value="20" min="1" max="300">
+            </div>
+            <button onclick="queryTrains()">查詢</button>
+            <div id="result"></div>
+        </div>
+        
+        <div class="right">
+            <h3>常用清單</h3>
+            <div>
+                <input type="text" id="favName" placeholder="清單名稱">
+                <button class="add-btn" onclick="addFavorite()">+</button>
+            </div>
+            <div class="favorites-list" id="favoritesList"></div>
+            <button class="save-btn" onclick="saveFavorites()">保存</button>
+        </div>
+    </div>
+
     <script>
+        let favorites = [];
+
         async function loadStations() {
             const res = await fetch('http://localhost:8000/stations');
             const stations = await res.json();
@@ -28,26 +50,95 @@
             const toSel = document.getElementById('toStation');
             
             let optionsHtml = '<option value="">請選擇車站</option>';
-
-            // 迭代每個車站物件，取出 id 和名稱
             stations.forEach(st => {
                 optionsHtml += `<option value="${st.station_id}">${st.name_zh}</option>`;
             });
-
-            // 一次性更新 DOM
             fromSel.innerHTML = optionsHtml;
             toSel.innerHTML = optionsHtml;
+        }
 
-            // stations.forEach(st => {
-            //     fromSel.innerHTML += `<option value="${st}">${st}</option>`;
-            //     toSel.innerHTML += `<option value="${st}">${st}</option>`;
-            // });
+        function setDefaultDate() {
+            const today = new Date();
+            const year = today.getFullYear();
+            const month = String(today.getMonth() + 1).padStart(2, '0');
+            const day = String(today.getDate()).padStart(2, '0');
+            document.getElementById('trainDate').value = `${year}-${month}-${day}`;
+        }
+
+        function loadFavorites() {
+            const stored = localStorage.getItem('favorites');
+            favorites = stored ? JSON.parse(stored) : [];
+            renderFavorites();
+        }
+
+        function renderFavorites() {
+            const list = document.getElementById('favoritesList');
+            list.innerHTML = '';
+            favorites.slice(0, 4).forEach((fav, idx) => {
+                const item = document.createElement('div');
+                item.className = 'favorite-item';
+                item.innerHTML = `
+                    <div class="favorite-content" onclick="applyFavorite(${idx})">
+                        <div class="favorite-name">${fav.name}</div>
+                        <div class="favorite-route">${fav.fromName} ➔ ${fav.toName}</div>
+                    </div>
+                    <button class="delete-btn" onclick="deleteFavorite(${idx})">刪除</button>
+                `;
+                list.appendChild(item);
+            });
+        }
+
+        function addFavorite() {
+            const fromSel = document.getElementById('fromStation');
+            const toSel = document.getElementById('toStation');
+            const from = fromSel.value;
+            const to = toSel.value;
+            const fromName = fromSel.options[fromSel.selectedIndex].text;
+            const toName = toSel.options[toSel.selectedIndex].text;
+            const name = document.getElementById('favName').value;
+
+            if (!from || !to || !name) {
+                alert("請填寫清單名稱並選擇起迄站");
+                return;
+            }
+
+            if (favorites.length >= 4) {
+                alert("最多只能保存 4 個清單");
+                return;
+            }
+
+            if (favorites.some(f => f.from === from && f.to === to && f.name === name)) {
+                alert("此清單已存在");
+                return;
+            }
+
+            favorites.push({ name, from, to, fromName, toName });
+            document.getElementById('favName').value = '';
+            renderFavorites();
+        }
+
+        function deleteFavorite(idx) {
+            favorites.splice(idx, 1);
+            renderFavorites();
+        }
+
+        function saveFavorites() {
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+            alert("常用清單已保存");
+        }
+
+        function applyFavorite(idx) {
+            const fav = favorites[idx];
+            document.getElementById('fromStation').value = fav.from;
+            document.getElementById('toStation').value = fav.to;
+            queryTrains();
         }
 
         async function queryTrains() {
             const from = document.getElementById('fromStation').value;
             const to = document.getElementById('toStation').value;
-            const date = document.getElementById('trainDate').value; // 獲取日期值
+            const date = document.getElementById('trainDate').value;
+            const buffer = document.getElementById('bufferTime').value;
 
             if (!from || !to || !date) {
                 alert("請選擇完整資訊");
@@ -57,22 +148,60 @@
                 document.getElementById('result').innerHTML = '<p>請選擇不同的起訖站。</p>';
                 return;
             }
-            const res = await fetch(`http://localhost:8000/trains?from=${from}&to=${to}&date=${date}`);
-            const data = await res.json();
-            if (data.length === 0) {
-                document.getElementById('result').innerHTML = '<p>查無資料</p>';
+            
+            const directRes = await fetch(`http://localhost:8000/trains?from=${from}&to=${to}&date=${date}`);
+            const directData = await directRes.json();
+            
+            const transferRes = await fetch(`http://localhost:8000/transfers?from=${from}&to=${to}&date=${date}&buffer=${buffer}`);
+            const transferData = await transferRes.json();
+            
+            if (directData.length === 0 && transferData.length === 0) {
+                document.getElementById('result').innerHTML = '<p>查無直達或轉乘方案</p>';
                 return;
             }
-            let html = '<table><tr><th>日期</th><th>車次</th><th>起站</th><th>起站發車</th><th>迄站</th><th>迄站到達</th></tr>';
-            data.forEach(row => {
-                html += `<tr><td>${row.train_date}</td><td>${row.train_no}</td><td>${row.from_station_name}</td><td>${row.from_departure}</td><td>${row.to_station_name}</td><td>${row.to_arrival}</td></tr>`;
-            });
-            html += '</table>';
+            
+            let html = '';
+            
+            if (directData.length > 0) {
+                html += '<h2>直達方案</h2><table><tr><th>日期</th><th>車次</th><th>起站</th><th>起站發車</th><th>迄站</th><th>迄站到達</th></tr>';
+                directData.forEach(row => {
+                    html += `<tr><td>${row.train_date}</td><td>${row.train_no}</td><td>${row.from_station_name}</td><td>${row.from_departure}</td><td>${row.to_station_name}</td><td>${row.to_arrival}</td></tr>`;
+                });
+                html += '</table>';
+            }
+            
+            if (transferData.length > 0) {
+                html += '<h2>轉乘方案</h2><table><tr><th>車次組合</th><th>出發</th><th>轉乘站 (等待時間)</th><th>抵達</th></tr>';
+                transferData.forEach(plan => {
+                    const t1 = plan.first_leg;
+                    const t2 = plan.second_leg;
+                    const combo = `${t1.train_no} ➔ ${t2.train_no}`;
+                    const departure = `${t1.from_departure} (${t1.from_station_name})`;
+                    const transfer = `${plan.transfer_station} (等 ${plan.wait_time_mins} 分)`;
+                    const arrival = `${t2.to_arrival} (${t2.to_station_name})`;
+                    html += `<tr><td>${combo}</td><td>${departure}</td><td>${transfer}</td><td>${arrival}</td></tr>`;
+                });
+                html += '</table>';
+            }
+            
             document.getElementById('result').innerHTML = html;
         }
+
         loadStations();
+        setDefaultDate();
+        loadFavorites();
     </script>
 </body>
 </html>
+            document.getElementById('result').innerHTML = html;
+        }
+            
+            document.getElementById('result').innerHTML = html;
+        }
 
-
+        loadStations();
+        setDefaultDate();
+        loadFavorites();
+    </script>
+</body>
+</html>
