@@ -98,7 +98,7 @@ def get_transfer_plans(from_id, to_id, date, buffer_minutes=20):
                 wait_time = (t2_dep - t1_arr).total_seconds() / 60
                 
                 # 過濾條件：等待時間需在 buffer 與 90 分鐘之間
-                if buffer_minutes <= wait_time <= 200:
+                if buffer_minutes <= wait_time <= 90:
                     plans.append({
                         "transfer_station": hub['name'],
                         "wait_time_mins": int(wait_time),
@@ -109,3 +109,65 @@ def get_transfer_plans(from_id, to_id, date, buffer_minutes=20):
     # 按總到達時間排序，這對使用者最實用
     plans.sort(key=lambda x: x['second_leg']['to_arrival'])
     return plans
+
+def get_final_itinerary(from_id, to_id, date, start_time, buffer_minutes=20):
+    """
+    整合直達與轉乘方案，並套用支配原則過濾
+    """
+    # 1. 抓取所有候選方案
+    direct_raw = get_trains_between(from_id, to_id, date)
+    transfer_raw = get_transfer_plans(from_id, to_id, date, buffer_minutes)
+    
+    candidates = []
+
+    # 統一格式化：直達
+    for d in direct_raw:
+        # 只取使用者指定時間之後的車次
+        if d['from_departure'] >= start_time:
+            candidates.append({
+                "type": "direct",
+                "departure": d['from_departure'],
+                "arrival": d['to_arrival'],
+                "details": d
+            })
+            
+    # 統一格式化：轉乘
+    for t in transfer_raw:
+        # 轉乘的出發時間是第一程的發車時間
+        dep = t['first_leg']['from_departure']
+        arr = t['second_leg']['to_arrival']
+        if dep >= start_time:
+            candidates.append({
+                "type": "transfer",
+                "departure": dep,
+                "arrival": arr,
+                "details": t
+            })
+
+    # --- 支配原則過濾核心 ---
+
+    # Step A: 排序
+    # 主要按「出發時間」由早到晚排。
+    # 出發時間相同時，按「抵達時間」由早到晚排。candidates.sort(key=lambda x: (x['arrival'], -time_to_minutes(x['departure'])))
+
+    optimized_results = []
+    current_max_departure = "00:00"
+
+    for cand in candidates:
+        # 支配原則：
+        # 如果這個方案比「比它早到」的所有方案都還要「晚出發」
+        # 說明它提供了額外的「出發彈性」，值得保留。
+        if cand['departure'] > current_max_departure:
+            optimized_results.append(cand)
+            current_max_departure = cand['departure']
+
+    # Step B: 最後再按「出發時間」排回去給前端，方便顯示
+    optimized_results.sort(key=lambda x: x['departure'])
+    
+    # 這裡可以實作「只列出前五個」
+    return optimized_results[:5]
+
+def time_to_minutes(t_str):
+    """小工具：將 HH:mm 轉為分鐘數方便比較"""
+    h, m = map(int, t_str.split(':'))
+    return h * 60 + m
