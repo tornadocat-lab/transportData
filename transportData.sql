@@ -64,3 +64,33 @@ DROP INDEX idx_stop_times_query ON stop_times;
 -- select * from `stop_times`;
 
 
+-- test data 
+-- 1. 新增車次基本資訊 (假設日期為 2026-03-05)
+INSERT INTO train_schedules (train_date, train_no, direction, starting_station_id, ending_station_id, update_time)
+VALUES 
+    ('2026-03-05', '0802', 1, '1070', '0990', NOW()),
+    ('2026-03-05', '0805', 0, '0990', '1070', NOW())
+AS new_data
+ON DUPLICATE KEY UPDATE update_time = new_data.update_time;
+
+-- 2. 新增 0802 (北上站站停) 關鍵停靠站
+INSERT INTO stop_times (train_date, train_no, station_id, stop_sequence, arrival_time, departure_time)
+VALUES 
+    ('2026-03-05', '0802', '1070', 1, '06:25:00', '06:25:00'), -- 左營
+    ('2026-03-05', '0802', '1047', 5, '07:12:00', '07:14:00'), -- 雲林
+    ('2026-03-05', '0802', '1043', 6, '07:23:00', '07:25:00'), -- 彰化
+    ('2026-03-05', '0802', '1040', 7, '07:37:00', '07:40:00')  -- 台中 (轉乘點)
+AS new_stops
+ON DUPLICATE KEY UPDATE arrival_time = new_stops.arrival_time;
+
+-- 3. 新增 0805 (南下站站停) 關鍵停靠站
+INSERT INTO stop_times (train_date, train_no, station_id, stop_sequence, arrival_time, departure_time)
+VALUES 
+    ('2026-03-05', '0805', '1000', 2, '07:11:00', '07:11:00'), -- 台北
+    ('2026-03-05', '0805', '1040', 4, '08:18:00', '08:20:00'), -- 台中 (轉乘點)
+    ('2026-03-05', '0805', '1043', 5, '08:30:00', '08:32:00'), -- 彰化
+    ('2026-03-05', '0805', '1047', 6, '08:43:00', '08:45:00')  -- 雲林
+AS new_stops
+ON DUPLICATE KEY UPDATE arrival_time = new_stops.arrival_time;
+
+
