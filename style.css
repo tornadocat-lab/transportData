@@ -20,3 +20,27 @@ h2 { margin-top: 1em; }
 #favName { width: 80%; padding: 0.5em; margin-right: 0.3em; }
 .add-btn { width: 16%; padding: 0.5em; margin: 0; }
 .save-btn { width: 100%; margin-top: 1em; }
+/* 標籤樣式 */
+.tag-direct {
+    background-color: #e3f2fd;
+    color: #1976d2;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.85em;
+}
+
+.tag-transfer {
+    background-color: #fff3e0;
+    color: #f57c00;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.85em;
+}
+
+/* 列的底色微調 */
+.row-direct { background-color: #fafafa; }
+.row-transfer { background-color: #ffffff; }
+
+/* 強調時間 */
+b { color: #2c3e50; }
+small { color: #7f8c8d; }
